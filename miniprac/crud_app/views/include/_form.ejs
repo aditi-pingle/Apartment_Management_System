@@ -1,0 +1,46 @@
+<form action="/api/owners" method="POST" id="add_owner">
+    <div class="new_owner">
+
+        <div class="form-group">
+            <label for="name" class="text-light">Name</label>
+            <input type="hidden" name="id" value="">
+            <input type="text" name="name" value="" placeholder="Enter your name">
+        </div>
+
+        <div class="form-group">
+            <label for="email" class="text-light">Email</label>
+            <input type="text" name="email" value="" placeholder="name@gmail.com">
+        </div>
+
+        <div class="form-group">
+            <label for="phone" class="text-light">Contact No.</label>
+            <input type="tel" name="phone" value="" placeholder="Enter contact number">
+        </div>
+
+        <div class="form-group">
+            <label for="city" class="text-light">City</label>
+            <input type="text" name="city" value="" placeholder="Enter city name">
+        </div>
+
+        <div class="form-group">
+            <label for="duration" class="text-light">Duration</label>
+            <input type="number" name="duration" value="" placeholder="Enter available duration in months">
+        </div>
+
+        <div class="form-group">
+            <label for="rooms" class="text-light">Rooms</label>
+            <input type="number" name="rooms" value="" placeholder="Enter number of rooms">
+        </div>
+
+        <div class="form-group">
+            <label for="rent" class="text-light">Rent</label>
+            <input type="number" name="rent" value="" placeholder="Enter total rent">
+        </div>
+        
+
+        <div class="form-group">
+            <button type="submit" class="btn text-dark update"> Save </button>
+        </div>
+
+    </div>
+</form>

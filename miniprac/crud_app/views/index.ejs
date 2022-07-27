@@ -1,0 +1,41 @@
+<!-- include header -->
+<%- include('include/_header') %>
+<!-- /include header -->
+
+<!-- Main Site -->
+<main id="site-main">
+    <div class="container">
+        <div>
+            <a href="/add-owner" class=border-shadow>
+                <button class="btn btn_new_owner"> <span class="text-gradient1 "> <i class="fas fa-user-tie"></i>  New Owner </span> </button>
+            </a>
+        </div>
+
+        <form action="/" method="POST">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Contact No.</th>
+                        <th>City</th>
+                        <th>Duration for rent</th>
+                        <th>Rooms</th>
+                        <th>Rent</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <%- include('include/_show') %>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</main>
+<!-- /Main Site -->
+
+<!-- include footer -->
+<%- include('include/_footer') %>
+<!-- /include footer -->
+

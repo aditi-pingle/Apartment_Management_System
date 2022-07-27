@@ -1,0 +1,72 @@
+<!-- include header -->
+<%- include('include/_header') %>
+<!-- /include header -->
+
+<!-- Main Site -->
+<main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex justify-between">
+            <div class="filter">
+                <a href="/"><i class="fas fa-angle-double-left"></i>All owners </a>
+            </div>
+        </div>
+
+        <div class="form-title text-center">
+            <h2 class="text-dark"> Update details </h2>
+        </div>
+
+        <form method="POST" id="update_owner">
+            <div class="new_owner">
+        
+                <div class="form-group">
+                    <label for="name" class="text-light">Name</label>
+                    <input type="hidden" name="id" value="<%=owner._id%>">
+                    <input type="text" name="name" value="<%=owner.name%>" placeholder="Enter your name">
+                </div>
+        
+                <div class="form-group">
+                    <label for="Email" class="text-light">Email</label>
+                    <input type="text" name="email" value="<%=owner.email%>" placeholder="name@gmail.com">
+                </div>
+        
+                <div class="form-group">
+                    <label for="phone" class="text-light">Contact No.</label>
+                    <input type="tel" name="phone" value="<%=owner.phone%>" placeholder="Enter contact number">
+                </div>
+        
+                <div class="form-group">
+                    <label for="City" class="text-light">City</label>
+                    <input type="text" name="city" value="<%=owner.city%>" placeholder="Enter city name">
+                </div>
+        
+                <div class="form-group">
+                    <label for="Duration" class="text-light">Duration</label>
+                    <input type="number" name="duration" value="<%=owner.duration%>" placeholder="Enter available duration in months">
+                </div>
+        
+                <div class="form-group">
+                    <label for="Rooms" class="text-light">Rooms</label>
+                    <input type="number" name="rooms" value="<%=owner.rooms%>" placeholder="Enter number of rooms">
+                </div>
+        
+                <div class="form-group">
+                    <label for="Rent" class="text-light">Rent</label>
+                    <input type="number"  name="rent" value="<%=owner.rent%>" placeholder="Enter total rent">
+                </div>
+                
+        
+                <div class="form-group">
+                    <button type="submit" class="btn text-dark update"> Save </button>
+                </div>
+        
+            </div>
+        </form>
+
+    </div>
+</main>
+<!-- /Main Site -->
+
+<!-- include footer -->
+<%- include('include/_footer') %>
+<!-- /include footer -->
+

@@ -1,0 +1,21 @@
+<% for(var i=0;i<owners.length;i++){ %>
+
+<tr>
+    <td><%= i+1 %></td>
+    <td><%= owners[i].name %></td>
+    <td><%= owners[i].email %></td>
+    <td><%= owners[i].phone %></td>
+    <td><%= owners[i].city %></td>
+    <td><%= owners[i].duration %></td>
+    <td><%= owners[i].rooms %></td>
+    <td><%= owners[i].rent %></td>
+    <td>
+        <a href="/update-owner?id=<%= owners[i]._id %>" class="btn border-shadow update">
+            <span class="text-gradient"><i class="fas fa-user-edit"></i></span>
+        </a>
+        <a class="btn border-shadow delete" data-id=<%= owners[i]._id %>>
+            <span class="text-gradient"><i class="fas fa-trash-alt"></i></span>
+        </a>
+    </td>
+</tr>
+<% } %>
